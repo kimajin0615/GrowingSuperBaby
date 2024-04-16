@@ -10,6 +10,7 @@ public class Item : ScriptableObject
     public string ItemName;
     public Sprite ItemImage;
     public string ItemInfo;
+    public string EfxInfo;
     public int price;
 
 }
