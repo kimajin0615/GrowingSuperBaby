@@ -5,7 +5,7 @@ public class PhoneMove : MonoBehaviour
 {
     public Transform targetPosition;
     public Transform targetPosition2;
-    public float moveSpeed = 2.0f;
+    public float moveSpeed = 10.0f;
 
     private bool isMoving = false;
     private bool isMovingBack = false;
