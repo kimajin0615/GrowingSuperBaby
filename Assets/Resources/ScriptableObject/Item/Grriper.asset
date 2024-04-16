@@ -15,4 +15,5 @@ MonoBehaviour:
   ItemName: "\uC545\uB825\uAE30"
   ItemImage: {fileID: 0}
   ItemInfo: "\uCC38\uACE0\uB85C \uC774 \uC545\uB825\uAE30\uB294 100kg \uC545\uB825\uAE30\uC774\uB2E4"
+  EfxInfo: "\uCCB4\uB825 +15, \uD798 +15"
   price: 29000

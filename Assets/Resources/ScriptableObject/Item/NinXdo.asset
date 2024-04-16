@@ -15,4 +15,5 @@ MonoBehaviour:
   ItemName: "\uB2CCX\uB3C4"
   ItemImage: {fileID: 0}
   ItemInfo: "\uC138\uACC4\uC801\uC73C\uB85C \uC720\uBA85\uD55C \uAC8C\uC784\uAE30"
+  EfxInfo: "\uC2A4\uD2B8\uB808\uC2A4 -15"
   price: 340000

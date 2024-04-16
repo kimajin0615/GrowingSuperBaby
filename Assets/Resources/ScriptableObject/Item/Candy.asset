@@ -16,4 +16,7 @@ MonoBehaviour:
   ItemImage: {fileID: 0}
   ItemInfo: "\uC5D0\uB108\uC9C0\uAC00 \uB2F4\uAE34 \uC0AC\uD0D5. \uC12D\uCDE8\uD55C
     \uC0AC\uB78C\uC758 \uB808\uBCA8\uC744 1 \uC62C\uB9B0\uB2E4"
+  EfxInfo: "\uCCB4\uB825 +20, \uC9C0\uB2A5 +20, \uD798 +20, \uB3C4\uB355\uC131 +20,
+    \uAC10\uC218\uC131 +20, \uC2E0\uB8B0\uB3C4 +10, \uC790\uC874\uAC10 +10, \uC608\uC758\uBC94\uC808
+    +10, \uC0AC\uAD50\uC131 +10, \uC81C\uC5B4\uB3C4 +10"
   price: 2000000

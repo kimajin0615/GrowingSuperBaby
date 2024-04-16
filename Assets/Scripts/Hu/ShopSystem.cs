@@ -42,9 +42,11 @@ public class ShopSystem : MonoBehaviour
 
         ItemName.text = Item.itemDB[ItemIndex].ItemName;
         infoText.text = Item.itemDB[ItemIndex].ItemInfo;
+        efxInfo.text = Item.itemDB[ItemIndex].EfxInfo;
+
 
     }
-    public void Buy()
+public void Buy()
     {
         Debug.Log(SelectItem.selectItem);
         if (DataManager.Instance.gameData.gold < Item.itemDB[SelectItem.selectItem].price)
