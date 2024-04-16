@@ -1,5 +1,6 @@
-
 Intro1 = CreateDialog(function ()
+
+    name = "슈슈"
 
     
     Talk("나","(오늘은 2024년 1월 1일 평범하게 새해를 맞이한 평범한 소시민..)","shushuF_0")
