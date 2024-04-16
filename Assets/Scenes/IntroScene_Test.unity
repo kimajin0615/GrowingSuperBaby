@@ -150,17 +150,17 @@ RectTransform:
   m_GameObject: {fileID: 78746806}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 773443753}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 650, y: -100}
-  m_SizeDelta: {x: 266.1639, y: 834.81}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 650, y: -135}
+  m_SizeDelta: {x: 700, y: 1100}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &78746808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 626fba04e0096f44298505fc6c2b4184, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 150442298}
   - component: {fileID: 150442297}
   m_Layer: 5
-  m_Name: QuestionText
+  m_Name: P_QuestionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,8 +314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: 13.050011, y: -0.5}
+  m_SizeDelta: {x: -46.09997, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246391864
 MonoBehaviour:
@@ -338,7 +338,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
     m_FontSize: 70
     m_FontStyle: 2
     m_BestFit: 0
@@ -521,12 +521,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 7
-    m_MaxSize: 70
+    m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 1160175080, guid: c005e6e279af9f1448b9376d349a6dfa, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -757,9 +757,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 933848771}
   - {fileID: 1236115686}
   - {fileID: 78746807}
-  - {fileID: 933848771}
   - {fileID: 1308965587}
   - {fileID: 441794511}
   - {fileID: 1971495791}
@@ -830,8 +830,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -879,9 +879,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1458174015}
   - {fileID: 1058281164}
   - {fileID: 1840001262}
+  - {fileID: 1458174015}
   - {fileID: 1563237747}
   m_Father: {fileID: 282738747}
   m_RootOrder: 2
@@ -920,11 +920,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1505e6705a236c04598176997d0d63dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  P_GenderQuestion: {fileID: 395709164}
   GenderQuestion: {fileID: 773443752}
   NameQuestion: {fileID: 782908030}
+  Standing: {fileID: 1058281165}
+  p_genderSelectBtn: {fileID: 1650923595}
   genderSelectBtn: {fileID: 1971495792}
   nameSelectBtn: {fileID: 1563237748}
   nameInput: {fileID: 1458174016}
+  male: {fileID: 21300000, guid: a3e9cf25d6ca7e6488344739c53e908c, type: 3}
+  female: {fileID: 21300000, guid: 626fba04e0096f44298505fc6c2b4184, type: 3}
 --- !u!4 &801558659
 Transform:
   m_ObjectHideFlags: 0
@@ -953,7 +958,7 @@ GameObject:
   - component: {fileID: 853424681}
   - component: {fileID: 853424680}
   m_Layer: 5
-  m_Name: MaleButton
+  m_Name: P_MaleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1026,7 +1031,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: MaleButton
+        m_MethodName: P_MaleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1038,7 +1043,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: GenderSelect
+        m_MethodName: P_GenderSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1197,7 +1202,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 773443753}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1225,12 +1230,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 90
+    m_MinSize: 1
+    m_MaxSize: 110
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1338,7 +1343,7 @@ GameObject:
   - component: {fileID: 1058281166}
   - component: {fileID: 1058281165}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1353,17 +1358,17 @@ RectTransform:
   m_GameObject: {fileID: 1058281163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 782908031}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -487.78772, y: 0}
-  m_SizeDelta: {x: 266.1639, y: 834.81}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -624.1, y: 3.2000122}
+  m_SizeDelta: {x: 700, y: 1100}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1058281165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,7 +1389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 626fba04e0096f44298505fc6c2b4184, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1429,16 +1434,16 @@ RectTransform:
   m_GameObject: {fileID: 1236115685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 773443753}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -650, y: -100}
-  m_SizeDelta: {x: 266.16394, y: 834.81006}
+  m_AnchoredPosition: {x: -650, y: -135}
+  m_SizeDelta: {x: 700, y: 1100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1236115687
 MonoBehaviour:
@@ -1460,7 +1465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a3e9cf25d6ca7e6488344739c53e908c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1606,7 +1611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 1160175080, guid: c005e6e279af9f1448b9376d349a6dfa, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1658,12 +1663,12 @@ RectTransform:
   - {fileID: 246391863}
   - {fileID: 305292667}
   m_Father: {fileID: 782908031}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.21228, y: 73.73007}
-  m_SizeDelta: {x: 612.8, y: 154.0802}
+  m_AnchoredPosition: {x: 72, y: 73.73007}
+  m_SizeDelta: {x: 613.73, y: 160.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458174016
 MonoBehaviour:
@@ -1753,7 +1758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 1560939608, guid: b01b85233bb05bd40af5acbdcd2127a1, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1914,12 +1919,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 54
+    m_MinSize: 7
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1948,7 +1953,7 @@ GameObject:
   - component: {fileID: 1530634878}
   - component: {fileID: 1530634877}
   m_Layer: 5
-  m_Name: SecretButton
+  m_Name: P_SecretButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2021,7 +2026,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: FemaleButton
+        m_MethodName: P_SecretButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2033,7 +2038,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: GenderSelect
+        m_MethodName: P_GenderSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2118,8 +2123,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.21228, y: -152.61002}
-  m_SizeDelta: {x: 311.1, y: 95.6}
+  m_AnchoredPosition: {x: 72, y: -152.61002}
+  m_SizeDelta: {x: 311.1, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563237748
 MonoBehaviour:
@@ -2209,8 +2214,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1191074091, guid: a66766fd0d73cd04a9b46cd252d49405, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2240,7 +2245,7 @@ GameObject:
   - component: {fileID: 1612704804}
   - component: {fileID: 1612704803}
   m_Layer: 5
-  m_Name: FemaleButton
+  m_Name: P_FemaleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2313,7 +2318,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: FemaleButton
+        m_MethodName: P_FemaleButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2325,7 +2330,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: GenderSelect
+        m_MethodName: P_GenderSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2459,7 +2464,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 801558658}
         m_TargetAssemblyTypeName: IntroSceneManager, Assembly-CSharp
-        m_MethodName: TurnOnNameQuestion
+        m_MethodName: TurnOnGenderQuestion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2566,12 +2571,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 54
+    m_MinSize: 0
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2646,8 +2651,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 55
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -2926,11 +2931,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 782908031}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.21228, y: 290.58997}
+  m_AnchoredPosition: {x: 72, y: 290.58997}
   m_SizeDelta: {x: 895.3149, y: 186.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840001263
@@ -2954,12 +2959,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
+    m_Font: {fileID: 12800000, guid: 9ad37575778f9104680ad1ae3ae3d11d, type: 3}
+    m_FontSize: 110
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 90
+    m_MinSize: 1
+    m_MaxSize: 110
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3013,7 +3018,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -231.9}
-  m_SizeDelta: {x: 311.1, y: 95.6}
+  m_SizeDelta: {x: 311.1, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971495792
 MonoBehaviour:
@@ -3091,8 +3096,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1191074091, guid: a66766fd0d73cd04a9b46cd252d49405, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
