@@ -19,48 +19,56 @@ public class dialogueLoader : MonoBehaviour
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Dabin_Under");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 1:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Hyen_Under");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 2:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Sia_Under");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 3:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Siu_Under");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 4:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Dabin_Up");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 5:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Hyen_Up");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 6:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Sia_Up");
+                    this.gameObject.SetActive(false);
                     break;
                 }
             case 7:
                 {
                     Debug.Log("½ÇÇàµÊ" + index);
                     DialogueManager.Instance.RunDialog("Siu_Up");
+                    this.gameObject.SetActive(false);
                     break;
                 }
         }
