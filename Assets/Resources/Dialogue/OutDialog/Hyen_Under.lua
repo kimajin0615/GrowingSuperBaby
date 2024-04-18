@@ -1,3 +1,3 @@
 Hyen_Under = CreateDialog(function()
-    Talk("채현","엇. 왜 왔어?","Chaehyun1_normal")
+    Talk("채현","엇. 왜 왔어?","hyun_5")
 end)
