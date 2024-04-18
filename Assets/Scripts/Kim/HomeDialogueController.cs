@@ -7,9 +7,9 @@ public class HomeDialogueController : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (eventData.pointerCurrentRaycast.gameObject.tag == "SuSu")
-        {
-            DialogueManager.Instance.RunDialog("Test");
-        }
+        //if (eventData.pointerCurrentRaycast.gameObject.tag == "SuSu")
+        //{
+        //    DialogueManager.Instance.RunDialog("Test");
+        //}
     }
 }

@@ -7,6 +7,7 @@ public class HomeSceneManager : MonoBehaviour
     [SerializeField] public Text AgeText;
     [SerializeField] public Text MonthText;
     [SerializeField] public Text MoneyText;
+    [SerializeField] public Image ShuShuStanding;
 
     private void Start()
     {

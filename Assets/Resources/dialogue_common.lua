@@ -21,3 +21,17 @@ function GaugeLine(name,value)
     local gaugeLine = CS.DialogueSystem.LikeGaugeLine(name, value)
     coroutine.yield(gaugeLine)
 end
+
+p_gender = 0
+gender = false
+name = ""
+
+function GetPlayerGender(input)
+    p_gender = input
+end
+function GetGender(input)
+    gender = input
+end
+function GetName(input)
+    name = input
+end

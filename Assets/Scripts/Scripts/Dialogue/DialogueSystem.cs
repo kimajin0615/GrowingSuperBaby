@@ -104,29 +104,6 @@ namespace DialogueSystem
             pMachine.Output.DoPrint(pMachine.NextLine);
         }
     }
-
-    public class GetPlayerGender : IDialogueLine
-    {
-        public void OnExecute(DialogueMachine pMachine)
-        {
-
-        }
-    }
-
-    public class GetShushuName : IDialogueLine
-    {
-        public void OnExecute(DialogueMachine pMachine)
-        {
-        }
-    }
-
-    public class GetShushuGender : IDialogueLine
-    {
-        public void OnExecute(DialogueMachine pMachine)
-        {
-        }
-    }
-
     //=============================================
 
 

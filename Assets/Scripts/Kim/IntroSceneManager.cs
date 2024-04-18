@@ -16,8 +16,6 @@ public class IntroSceneManager : MonoBehaviour
     [SerializeField] private Sprite male;
     [SerializeField] private Sprite female;
 
-
-
     public void P_MaleButton() { DataManager.Instance.gameData.playerGender = 0; }
     public void P_FemaleButton() { DataManager.Instance.gameData.playerGender = 1; }
     public void P_SecretButton() { DataManager.Instance.gameData.playerGender = 2; }

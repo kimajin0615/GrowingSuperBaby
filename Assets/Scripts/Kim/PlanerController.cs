@@ -82,8 +82,7 @@ public class PlanerController : MonoBehaviour, IPointerClickHandler
                 Notes[i] = stickyNotes[i].name;
             }
             DataManager.Instance.gameData.gold -= totalMoney;
-            //HomeCanvas.SetActive(false);
-            //BehaviorCanvas.SetActive(true);
+
             canvasManager.GetComponent<CanvasManager>().BehaviorCanvasOnOff(true);
             canvasManager.GetComponent<CanvasManager>().AnimatorOnOff(true);
         }
