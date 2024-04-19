@@ -69,8 +69,8 @@ public class BehaviorManager : MonoBehaviour
             statusDelegate = (StatusDelegate)System.Delegate.CreateDelegate(typeof(StatusDelegate), statusInstance, animationName + "Status");
             statusDelegate(isSuccess);
 
-            Invoke(animationName + "Status", 0.1f);
-            Invoke(animationName + "Status", 0);
+            //Invoke(animationName + "Status", 0.1f);
+            //Invoke(animationName + "Status", 0);
 
             foreach (var date in Date.eventDates) // 그냥 딕셔너리로 해도 된거같긴한데 그거 너무 보기가 안좋달까... 잘 안들어온달까...흠.. 그래도 그걸쓰는게 효율이 좋으려남능람;ㄴㅏ 멀라 걍 해
             {
@@ -103,6 +103,9 @@ public class BehaviorManager : MonoBehaviour
                 DataManager.Instance.gameData.year += 1;
                 DataManager.Instance.gameData.month = 1;
             }
+
+            canvasManager.GetComponent<CanvasManager>().HomeCanvasOnOff(true);
+            canvasManager.GetComponent<CanvasManager>().BehaviorCanvasOnOff(false);
         }
     }
 }
