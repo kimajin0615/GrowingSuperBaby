@@ -161,7 +161,7 @@ public class StatusController : MonoBehaviour
         }
     }
 
-    public static void SaikiStatus(bool isSuccess)
+    public void SaikiStatus(bool isSuccess)
     {
         if (isSuccess)
         {
