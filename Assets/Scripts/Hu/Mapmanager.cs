@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Mapmanager : MonoBehaviour
 {
+    public GameObject[] btns = new GameObject[4];
     public GameObject[] Maps = new GameObject[4];
 
     public GameObject SelectMap;
@@ -21,6 +23,11 @@ public class Mapmanager : MonoBehaviour
     public void Select(int index)
     {
         SelectMap = Maps[index];
+        for (int i = 0; i < btns.Length; i++)
+        {
+            btns[i].GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+        btns[index].GetComponent<Image>().color = new Color(0.7f, 0.7f, 0.7f, 1);
     }
     public void Move()
     {
