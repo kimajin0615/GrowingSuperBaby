@@ -50,17 +50,18 @@ public class BehaviorManager : MonoBehaviour
             else if (day == 28) { animationName = planerController.GetComponent<PlanerController>().Notes[4]; }
             Debug.Log($"{day} : {animationName}");
 
-            animator.SetTrigger(animationName);
 
             // 성공 실패 나누기
             int random = UnityEngine.Random.Range(0, 100);
             if (random < 40)
             {
+                animator.SetTrigger(animationName+ "_F");
                 animator.Play(animationName + "_F");
                 isSuccess = false;
             }
             else
             {
+                animator.SetTrigger(animationName + "_S");
                 animator.Play(animationName + "_S");
                 isSuccess = true;
             }

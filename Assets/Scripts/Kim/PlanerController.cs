@@ -74,14 +74,14 @@ public class PlanerController : MonoBehaviour, IPointerClickHandler
                 count++;
         }
 
-        if(DataManager.Instance.gameData.gold >= totalMoney && count == stickyNotes.Length)
+        if(DataManager.Instance.gameData.gold > -totalMoney && count == stickyNotes.Length)
         {
             Notes = new string[stickyNotes.Length];
             for(int i = 0; i < stickyNotes.Length; i++)
             {
                 Notes[i] = stickyNotes[i].name;
             }
-            DataManager.Instance.gameData.gold -= totalMoney;
+            DataManager.Instance.gameData.gold += totalMoney;
 
             canvasManager.GetComponent<CanvasManager>().BehaviorCanvasOnOff(true);
             canvasManager.GetComponent<CanvasManager>().AnimatorOnOff(true);
