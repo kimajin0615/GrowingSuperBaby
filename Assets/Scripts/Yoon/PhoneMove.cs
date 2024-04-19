@@ -9,6 +9,7 @@ public class PhoneMove : MonoBehaviour
 
     private bool isMoving = false;
     private bool isMovingBack = false;
+    private bool isMoved = false;
 
     private Vector3 startPosition;
     private float journeyLength;
@@ -65,6 +66,7 @@ public class PhoneMove : MonoBehaviour
     private void MoveObject()
     {
         isMoving = true;
+        isMoved = true;
         startPosition = transform.position;
         journeyLength = Vector3.Distance(startPosition, targetPosition.position);
         startTime = Time.time;
@@ -72,9 +74,14 @@ public class PhoneMove : MonoBehaviour
 
     public void MoveBack()
     {
-        isMovingBack = true;
-        startPosition = transform.position;
-        journeyLength = Vector3.Distance(startPosition, targetPosition2.position);
-        startTime = Time.time;
+        if (isMoved)
+        {
+            isMovingBack = true;
+            startPosition = transform.position;
+            journeyLength = Vector3.Distance(startPosition, targetPosition2.position);
+            startTime = Time.time;
+            isMoved = false;
+        }
+        
     }
 }
