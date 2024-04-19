@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using XLua;
 
@@ -15,38 +13,42 @@ public delegate void GetName(string name);
 
 public class IntroLua : MonoBehaviour
 {
-    private LuaEnv m_luaEnv;
+    public static LuaEnv m_luaEnv;
 
     private GetPlayerGender m_getPlayerGender;
     private GetGender m_getGender;
     private GetName m_getName;
 
-    private void Awake()
+    private void OnEnable()
     {
-        m_luaEnv = new LuaEnv();
+        //m_luaEnv = new LuaEnv();
 
-        m_getPlayerGender = m_luaEnv.Global.Get<GetPlayerGender>("GetPlayerGender");
-        m_getGender = m_luaEnv.Global.Get<GetGender>("GetGender");
-        m_getName = m_luaEnv.Global.Get<GetName>("GetName");
     }
 
     public void PlayerGender()
     {
+        m_luaEnv = DialogueManager.m_dialogueLuaEnv;
+        m_getPlayerGender = m_luaEnv.Global.Get<GetPlayerGender>("GetPlayerGender");
+
+        Debug.Log("PlayerGender");
+        if (m_getPlayerGender == null)
+            Debug.Log($"m_getPlayerGender == null");
         m_getPlayerGender(DataManager.Instance.gameData.playerGender);
     }
 
     public void Gender()
     {
+        m_luaEnv = DialogueManager.m_dialogueLuaEnv;
+        m_getGender = m_luaEnv.Global.Get<GetGender>("GetGender");
+
         m_getGender(DataManager.Instance.gameData.gender);
     }
 
     public void Name()
     {
-        m_getName(DataManager.Instance.gameData.name);
-    }
+        m_luaEnv = DialogueManager.m_dialogueLuaEnv;
+        m_getName = m_luaEnv.Global.Get<GetName>("GetName");
 
-    private void OnDestroy()
-    {
-        m_luaEnv.Dispose();
+        m_getName(DataManager.Instance.gameData.name);
     }
 }

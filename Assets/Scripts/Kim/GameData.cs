@@ -1,19 +1,23 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class GameData
 {
     // ===== basic data =====
     public string name;
+    public int[] ageList = { 0, 3, 5, 8, 12, 15, 16, 17, 18 };
     public int age;
     public bool gender; //0 = male, 1 = female
     public int playerGender; // 0 = male, 1 = female, 2 = secret
 
     public int gold = 350000;
 
-    public int month;
+    public int year = 0;
+    public int month = 1;
     public int day = 1;
+
 
     // ===== shushu condition =====
     public Dictionary<string, bool> condition = new Dictionary<string, bool>()

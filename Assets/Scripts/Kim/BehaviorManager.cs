@@ -97,6 +97,12 @@ public class BehaviorManager : MonoBehaviour
             Debug.Log("³¡");
             DataManager.Instance.gameData.day = 1;
             DataManager.Instance.SaveGameData();
+            DataManager.Instance.gameData.month += 1;
+            if (DataManager.Instance.gameData.month == 7)
+            {
+                DataManager.Instance.gameData.year += 1;
+                DataManager.Instance.gameData.month = 1;
+            }
         }
     }
 }

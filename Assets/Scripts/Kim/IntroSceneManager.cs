@@ -16,6 +16,8 @@ public class IntroSceneManager : MonoBehaviour
     [SerializeField] private Sprite male;
     [SerializeField] private Sprite female;
 
+    public GameObject introLua;
+
     public void P_MaleButton() { DataManager.Instance.gameData.playerGender = 0; }
     public void P_FemaleButton() { DataManager.Instance.gameData.playerGender = 1; }
     public void P_SecretButton() { DataManager.Instance.gameData.playerGender = 2; }
@@ -27,8 +29,19 @@ public class IntroSceneManager : MonoBehaviour
     public void FemaleButton() { DataManager.Instance.gameData.gender = true; }
     public void GenderSelect() { genderSelectBtn.interactable = true; }
 
-    public void LoadHomeScene()
+    private void Start()
     {
+        introLua = GameObject.Find("IntroLua");
+    }
+
+    public void LastBtn()
+    {
+        DataManager.Instance.gameData.name = nameInput.text;
+
+        //introLua.GetComponent<IntroLua>().PlayerGender();
+        //introLua.GetComponent<IntroLua>().Gender();
+        //introLua.GetComponent<IntroLua>().Name();
+
         SceneManager.LoadScene("HomeScene");
     }
 
@@ -52,16 +65,15 @@ public class IntroSceneManager : MonoBehaviour
         }
     }
 
-    public void SetName()
-    {
-        DataManager.Instance.gameData.name = nameInput.text;
-    }
-
     private void Update()
     {
         if(nameInput.text != null)
         {
             nameSelectBtn.interactable = true;
+        }
+        else
+        {
+            nameSelectBtn.interactable = false;
         }
     }
 }

@@ -9,6 +9,14 @@ using DialogueSystem;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static bool gender;
+    public static string name;
+    public static Int32 p_gender;
+
+    private GetPlayerGender m_getPlayerGender;
+    private GetGender m_getGender;
+    private GetName m_getName;
+
     private static DialogueManager m_instance;
     public static DialogueManager Instance
     {
@@ -30,12 +38,15 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueUI m_dialogueUI;
     private DialogueMachine m_dialogueMachine;
-    private LuaEnv m_dialogueLuaEnv;
+    public static LuaEnv m_dialogueLuaEnv;
 
 
     private void Awake()
     {
+        Debug.Log("DialogueManager");
+
         m_dialogueLuaEnv = new LuaEnv();
+        //m_dialogueLuaEnv = IntroLua.m_luaEnv;
         m_dialogueMachine = new DialogueMachine();
         FindDialogueUI();
 
@@ -49,6 +60,10 @@ public class DialogueManager : MonoBehaviour
             Debug.Log(script);
             m_dialogueLuaEnv.DoString(script.text);
         }
+
+        PlayerGender();
+        Gender();
+        Name();
     }
 
     private void FindDialogueUI()
@@ -75,6 +90,30 @@ public class DialogueManager : MonoBehaviour
         }
 
         RunDialog(dialogue);
+    }
+
+    public void PlayerGender()
+    {
+        m_getPlayerGender = m_dialogueLuaEnv.Global.Get<GetPlayerGender>("GetPlayerGender");
+
+        Debug.Log("PlayerGender");
+        if (m_getPlayerGender == null)
+            Debug.Log($"m_getPlayerGender == null");
+        m_getPlayerGender(DataManager.Instance.gameData.playerGender);
+    }
+
+    public void Gender()
+    {
+        m_getGender = m_dialogueLuaEnv.Global.Get<GetGender>("GetGender");
+
+        m_getGender(DataManager.Instance.gameData.gender);
+    }
+
+    public void Name()
+    {
+        m_getName = m_dialogueLuaEnv.Global.Get<GetName>("GetName");
+
+        m_getName(DataManager.Instance.gameData.name);
     }
 }
 
