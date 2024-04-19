@@ -10,6 +10,7 @@ public class Mapmanager : MonoBehaviour
     public GameObject[] Maps = new GameObject[4];
 
     public GameObject SelectMap;
+    public SoundManager clickEfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,8 @@ public class Mapmanager : MonoBehaviour
         foreach(GameObject i in Maps)
         {
             i.SetActive(false);
+            clickEfx.musicsource.clip = clickEfx.homeBGM;
+            clickEfx.musicsource.Play();
         }
         if (SelectMap == Maps[0]) SceneManager.LoadScene("HomeScene");
         else SelectMap.SetActive(true);
